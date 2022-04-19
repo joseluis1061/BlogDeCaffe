@@ -1,0 +1,20 @@
+{
+  "name": "blogdecaffe",
+  "version": "1.0.0",
+  "description": "Este proyecto esta hecho para promocionar una compañía de café",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseluis1061/BlogDeCaffe.git"
+  },
+  "keywords": [],
+  "author": "JOSE LUIS ZUÑIGA <joseluis836@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joseluis1061/BlogDeCaffe/issues"
+  },
+  "homepage": "https://github.com/joseluis1061/BlogDeCaffe#readme"
+}
