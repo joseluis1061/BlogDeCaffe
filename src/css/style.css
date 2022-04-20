@@ -198,3 +198,21 @@ img {
     margin-top: 4rem;
 }
 /************* FIN INDEX */
+
+/* Inicio NOSOTROS *************/
+@media(min-width: 768px){
+
+    .nosotros__contenido{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+
+
+}
+
+.nosotros__texto p{
+    margin: 0;
+    text-align: justify;
+}
+/************* FIN NOSOTROS */
