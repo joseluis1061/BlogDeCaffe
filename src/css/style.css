@@ -58,6 +58,7 @@ img {
     text-align: center;
 }
 
+/*INICIO INDEX *************/
 /** Header **/
 .header{
     height: 60rem;
@@ -120,3 +121,80 @@ img {
         margin-top: 15rem;
     }
 }
+
+/** main **/
+@media(min-width: 768px){
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 4rem;
+    }
+}
+
+.entrada{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+    margin-bottom: 0; 
+    border-bottom: none;
+}
+
+.boton{
+    display: block;
+    padding: 1rem 3rem ;
+    margin-bottom: 2rem;
+    font-family: var(--fuenteHeading);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: none;
+    color: var(--blanco);
+}
+@media(min-width: 768px){
+    .boton{
+        display: inline-block;
+    }
+}
+.boton:hover{
+    cursor: pointer;
+}
+.boton--primario{
+    background-color: var(--negro);
+}
+.boton--secundario{
+    background-color: var(--primario);
+}
+
+/** aside **/
+.cursos{
+    list-style: none;
+}
+.widget-curso{
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--gris);
+}
+.widget-curso:last-of-type{  
+    margin-bottom: 0;  
+    border-bottom: none;
+}
+.widget-curso__label,
+.widget-curso__info{
+    font-size: 2rem;
+}
+.widget-curso__label{
+    font-weight: 700;
+}
+.widget-curso__info{
+    font-weight: 400;
+}
+
+/** Footer **/
+.footer {
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+/************* FIN INDEX */
