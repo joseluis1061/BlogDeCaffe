@@ -57,6 +57,9 @@ img {
 .centrar-texto {
     text-align: center;
 }
+.justificar-texto{
+    text-align: justify;
+}
 
 /*INICIO INDEX *************/
 /** Header **/
@@ -210,9 +213,35 @@ img {
 
 
 }
-
 .nosotros__texto p{
     margin: 0;
     text-align: justify;
 }
 /************* FIN NOSOTROS */
+
+
+/* INICIO CURSOS *************/
+
+
+/************* FIN CURSOS */
+/* .cursos_container{
+
+} */
+.curso{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2.5rem;
+}
+.curso:last-of-type{
+    border: none;
+}
+@media(min-width: 768px){
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 30px;
+    }
+}
+
+.curso__imagen{
+
+}
