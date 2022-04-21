@@ -73,3 +73,75 @@ const Pedro = new Student({
     twitter : "juanII",
     learningPaths:fronted
 });
+
+
+class User{
+    #nombre;
+    constructor({
+        id = 0,
+        nombre, 
+        nacionalidad = "COL",
+        correo = "ejemplo@email.com",
+    }){
+        this.id = id;
+        this.#nombre = nombre; 
+        this.nacionalidad = nacionalidad;
+        this.correo = correo;
+    }
+    
+    get darNombre(){
+        return this.#nombre;
+    }
+}
+
+const Victoria = new User({
+    nombre: "VIcky",
+
+});
+
+// class Student{
+//     constructor({
+//         id,
+//         nombre, 
+//         nacionalidad,
+//         correo,
+//         plan,
+//         aprovedCourses = [],
+//         learningPaths = []
+//     }){
+//         this.id = id;
+//         this.nombre = nombre; 
+//         this.nacionalidad = nacionalidad;
+//         this.correo = correo;
+//         this.plan = plan;
+//         this.aprovedCourses = aprovedCourses;
+//         this.learningPaths = learningPaths;
+//     }
+//     addAprovedCourses(newCourse){
+//         this.aprovedCourses.push(newCourse);
+//     }    
+// }
+
+class Teacher{
+    constructor({
+        id,
+        nombre, 
+        nacionalidad,
+        correo,
+        tipoContrato,
+        aprovedCourses = [],
+        learningPaths = []
+    }){
+        this.id = id;
+        this.nombre = nombre; 
+        this.nacionalidad = nacionalidad;
+        this.correo = correo;
+        this.tipoContrato = tipoContrato;
+        this.plan = plan;
+        this.aprovedCourses = aprovedCourses;
+        this.learningPaths = learningPaths;
+    }
+    addAprovedCourses(newCourse){
+        this.aprovedCourses.push(newCourse);
+    }    
+}
