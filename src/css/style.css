@@ -155,6 +155,7 @@ img {
     font-weight: 700;
     border: none;
     color: var(--blanco);
+    cursor: pointer;
 }
 @media(min-width: 768px){
     .boton{
@@ -223,7 +224,7 @@ img {
 /* INICIO CURSOS *************/
 
 
-/************* FIN CURSOS */
+
 /* .cursos_container{
 
 } */
@@ -241,7 +242,69 @@ img {
         column-gap: 30px;
     }
 }
+/************* FIN CURSOS */
 
-.curso__imagen{
+/* INICIO CONTACTO *************/
+.contacto__bg{
+    height: 40rem;
+    background-image: url("/assets/img/contacto.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
+@media(min-width: 768px){
+    .form__contacto{
+        width: 90%;
+        padding: 50px;
+        margin: -4rem auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--blanco);
+    }
+}
+
+.campo{
+    width: 100%;
+}
+.campo__field{
+    width: 100%;
+    padding: 5px;
+}
+.campo__field-textarea{
+    height: 20rem;
+}
+.boton--enviar{
+    width: 100%;
+    display: block;
+}
+@media(min-width: 768px){
+    .campo{
+        display: flex;
+        margin-bottom: 2rem;        
+    }
+    .campo__label{
+        flex: 0 0 9rem;
+        text-align: right;
+        margin-right: 1rem;
+    }
+    .campo__field{
+        flex: 1;
+    }
+    .campo:last-of-type{
+        width: 100%;
+        justify-content: center;
+        margin-left: 3rem;
+    }
+    .boton--enviar{       
+        display: inline-block;
+        max-width: 30%;
+        justify-self: center;
+    }
+}
+
+
+
+
+/************* FIN CONTACTO */
