@@ -18,6 +18,7 @@ body {
     font-family: var(--fuenteParrafos);
     font-size: 1.6rem;
     line-height: 2;
+    margin: 0;
 }
 
 /** Globales **/
@@ -65,7 +66,7 @@ img {
 /** Header **/
 .header{
     height: 60rem;
-    background-image: url("/assets/img/banner.jpg");  
+    background-image: url("../assets/img/banner.jpg");  
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;  
@@ -247,7 +248,7 @@ img {
 /* INICIO CONTACTO *************/
 .contacto__bg{
     height: 40rem;
-    background-image: url("/assets/img/contacto.jpg");
+    background-image: url("../assets/img/contacto.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
