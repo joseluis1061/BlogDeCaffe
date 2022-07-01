@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   //mode: production,
@@ -24,6 +25,21 @@ module.exports = {
         use:{
           loader: 'babel-loader'
         }
+      },
+
+      //CSS
+      {
+        test:/\.css$/i,
+        use:[
+          MiniCssExtractPlugin.loader,
+          'css-loader'
+        ]
+
+      },
+      //Image
+      {
+        test:/\.[png]/,
+        type: 'assets/resourse'
       }
     ]
   },
@@ -36,7 +52,12 @@ module.exports = {
         template: './src/index.html',
         filename: './index.html'
       }
-    )
+    ),
+    //CSS
+    new MiniCssExtractPlugin()
+    //Copia de archivos
+    
+    
   ]
 
 }
