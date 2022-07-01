@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   //mode: production,
@@ -14,7 +15,7 @@ module.exports = {
     extensions:['.js']
   },
 
-  module:{
+  module: {
     rules:[
       //Babel
       {
@@ -25,6 +26,17 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+
+  plugins: [
+    //HTML
+    new HtmlWebpackPlugin(
+      {
+        inject : true,
+        template: './src/index.html',
+        filename: './index.html'
+      }
+    )
+  ]
 
 }
